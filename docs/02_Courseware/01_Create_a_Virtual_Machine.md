@@ -94,11 +94,11 @@ Once your machine has been created, we can remotely connect to it using secure s
   1. Open **PuTTY**.
 
   2. In the configuration window:  
-  <img src="../images/putty_configuration.jpg" style="margin:10px 0px;box-shadow: 2px 2px 2px #999;border:1px solid #ccc;"/>
-
+  
       * Hostname: **_&lt;IP address from previous step&gt;_**
       * Port: **22**
-      * Connection type: **SSH**
+      * Connection type: **SSH**   
+<img src="../images/putty_configuration.jpg" style="margin:10px 0px;box-shadow: 2px 2px 2px #999;border:1px solid #ccc;"/>
 
   3. Click **Open**
 
