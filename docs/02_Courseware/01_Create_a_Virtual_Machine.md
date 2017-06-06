@@ -18,7 +18,7 @@ As stated on the previous page, in order to create resources, we need a _Resourc
 
   5. Click **Create**.
 
-  6. It should only take a second for the resource group to be created.  Once you click create, the configuration panel closes and returns you to the list of available resource groups.  Your recently created group may not be visible in the list.  Clicking on **Refresh** <img src="https://raw.githubusercontent.com/AzureWorkshops/images/master/icons_add.jpg" style="display: inline; margin:0px 5px;box-shadow: 2px 2px 2px #999;border:1px solid #ccc;"/> at the top of the Resource Groups blade should display your new resource group.
+  6. It should only take a second for the resource group to be created.  Once you click create, the configuration panel closes and returns you to the list of available resource groups.  Your recently created group may not be visible in the list.  Clicking on **Refresh** <img src="https://raw.githubusercontent.com/AzureWorkshops/images/master/icons_refresh.jpg" style="display: inline; margin:0px 5px;box-shadow: 2px 2px 2px #999;border:1px solid #ccc;"/> at the top of the Resource Groups blade should display your new resource group.
 
 **NOTE:** When you create a resource group, you are prompted to choose a location. Additionally, as you create individual resources, you will also be prompted to choose locations. The location of resource groups and their resources can be different.  This is because resource groups store _metadata_ describing their contained resources; and, due to some types of compliance that your company may adhere to, you may need to store that metadata in a different location than the resources themselves.  For example, if you are a US-based company, you may choose to keep the metadata state-side while creating resources in foreign regions to reduce latency for the end-user.
 
@@ -30,6 +30,7 @@ Now that we have an available resource group, let's create the actual Ubuntu ser
   2. At the top of the blade for our group, click on **Add** <img src="https://raw.githubusercontent.com/AzureWorkshops/images/master/icons_add.jpg" style="display: inline; margin:0px 5px;box-shadow: 2px 2px 2px #999;border:1px solid #ccc;"/>. This will display the blade for the _Azure Marketplace_ allowing you to deploy a number of different solutions.
 
   3. We are interested in deploying an Ubuntu server. Therefore, in the _Search Everything_ box, type in **Ubuntu Server**.  This will display a couple of different versions.  Since we want to deploy the latest _stable_ version on Ubuntu, from the displayed options, choose **Ubuntu Server 16.04 LTS**.
+  <img src="../images/ubuntu_server.jpg" style="margin:10px 0px;box-shadow: 2px 2px 2px #999;border:1px solid #ccc;"/>
 
   4. This will display a blade providing more information about the server we have chosen. To continue creating the server, choose **Create**.
 
