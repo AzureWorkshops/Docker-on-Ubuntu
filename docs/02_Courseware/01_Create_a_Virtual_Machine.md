@@ -29,7 +29,7 @@ Now that we have an available resource group, let's create the actual Ubuntu ser
 
   2. At the top of the blade for our group, click on **Add** <img src="https://raw.githubusercontent.com/AzureWorkshops/images/master/icons_add.jpg" style="display: inline; margin:0px 5px;box-shadow: 2px 2px 2px #999;border:1px solid #ccc;"/>. This will display the blade for the _Azure Marketplace_ allowing you to deploy a number of different solutions.
 
-  3. We are interested in deploying an Ubuntu server. Therefore, in the _Search Everything_ box, type in **Ubuntu Server**.  This will display a couple of different versions.  Since we want to deploy the latest _stable_ version on Ubuntu, from the displayed options, choose **Ubuntu Server 16.04 LTS**.
+  3. We are interested in deploying an Ubuntu server. Therefore, in the _Search Everything_ box, type in **Ubuntu Server**.  This will display a couple of different versions.  Since we want to deploy the latest _stable_ version of Ubuntu, from the displayed options, choose **Ubuntu Server 16.04 LTS**.
   <img src="../images/ubuntu_server.jpg" style="margin:10px 0px;box-shadow: 2px 2px 2px #999;border:1px solid #ccc;"/>
 
   4. This will display a blade providing more information about the server we have chosen. To continue creating the server, choose **Create**.
