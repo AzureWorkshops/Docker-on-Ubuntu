@@ -28,7 +28,7 @@ We now have an updated Ubuntu operating system.  We are ready to install Docker.
   ```bash
   sudo apt-key adv --keyserver hkp://p80.pool.sks-keyservers.net:80 --recv-keys 58118E89F3A912897C070ADBF76221572C52609D
   ```  
-!!<h4>Cut &amp; Paste</h4>You can paste this into PuTTY by _right-clicking_ the terminal screen.
+!!<h4>Cut &amp; Paste</h4>You can paste this into PuTTY by <em>right-clicking</em> the terminal screen.
 
   2. Now, we need to tell Ubuntu _where_ the Docker repository is located. From the command prompt, type (or paste) the following:
   ```bash
