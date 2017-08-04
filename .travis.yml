@@ -16,7 +16,7 @@ script:
   - cp -R ~/.config/layouts/themes ./themes/
   - cp -R ~/.config/layouts/daux ./daux/
   - cp -R ~/.config/layouts/node/* .
-  - npm install
+  - travis wait npm install
   - ~/.config/composer/vendor/bin/daux
   - node index.js
   - git add static && git commit -m "documentation check-in ${TRAVIS_COMMIT}"
