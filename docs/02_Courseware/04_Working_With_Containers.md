@@ -38,7 +38,7 @@ Microsoft's public registry is hosted by Docker.  You can visit Microsoft's regi
 ## Inspecting Images
 There are a couple of ways we can get some greater details about our images.  We can view the underlying metadata of our image; and, we can see the build history of the image.
 
-#### Image Inspection (Metadata)
+### Image Inspection (Metadata)
 To view the metadata of an image, we'll need to _inspect_ it.  From the command prompt, type the following:
 
 ```bash
@@ -91,7 +91,7 @@ You should see something that begins with the following:
 
 Take a moment to examine the metadata. As you look through this information, you will find various attributes that describe the image.  
 
-#### Image History
+### Image History
 The last bit of information that the `inspect` command reported was a set of layers:
 ```bash
     "Layers": [
@@ -144,7 +144,7 @@ You will see all of the commands, which include installing multiple dependency l
 ## Listing Containers
 Not only can we list our local images, but we can also list our local, instantiated containers.  
 
-#### Running Containers
+### Running Containers
 Type in the command line:
 ```bash
 docker ps
@@ -154,7 +154,7 @@ You should see some like the following:
 CONTAINER ID        IMAGE               COMMAND             CREATED             STATUS              PORTS               NAMES
 ```
 This tells us that no containers are currently running.  
-#### Non-running Containers
+### Non-running Containers
 We can see previously ran containers by typing in the following:
 ```bash
 docker ps -a
@@ -176,12 +176,12 @@ docker run <namespace/image>
 ```
 There are two primary types of processes - short-running and long-running.
 
-#### Short-running Processes
+### Short-running Processes
 Short-running process are just like the images we've already ran - `hello-world` and `whalesay`.  Another example is the `softcover` image.  A short-running process typically runs a single command, performing a single function, then exits.  This function could be displaying a message, sending an email, or building an application or other resource (e.g. a book, help documentation, etc).
 
 Every time we we run a short-running process, using the above command another container is instantiated.  This is why a new container was created ever time you ran `whalesay`.
 
-#### Long-running Processes
+### Long-running Processes
 Long-running processes are typically service-based applications (e.g. web servers, service buses, queues, etc.).  We can also run an OS as a container.  Try typing in the following:
 ```bash
 docker run -it ubuntu /bin/bash
@@ -227,7 +227,7 @@ docker stop 094
 
 Running `docker ps` again should show you that no more containers are currently running.
 
-#### Re-running a Stopped Container
+### Re-running a Stopped Container
 There will be times when you may need to re-run a stopped container. Find one of the stopped 'whalesay' containers by typing the following:
 ```bash
 docker ps -a

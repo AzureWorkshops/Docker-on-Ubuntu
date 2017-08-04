@@ -7,7 +7,7 @@ Just like any other operating system, updates are periodically released to suppo
   1. If you have not already, connect to your remote Ubuntu server and login.
 
   2. From the login prompt, you may see a status of available updates. (If not, don't be too alarmed - continue with these steps anyway just to be sure.)  
-  <img src="../images/ubuntu_updates.jpg" style="margin:10px 0px;box-shadow: 2px 2px 2px #999;border:1px solid #ccc;"/>
+  <img src="../images/ubuntu_updates.jpg" class="block"/>
 
   3. First we need to ensure our list of sources for our system updates are up-to-date. From the command prompt, type the following:
   ```bash
@@ -67,7 +67,7 @@ We now have an updated Ubuntu operating system.  We are ready to install Docker.
 ## Additional Configuration
 To simplify running and managing Docker, there's some additional configuration that we need to implement.  While this section is optional, it is recommended to make managing Docker much easier.
 
-#### Ensure Docker Engine is Running
+### Ensure Docker Engine is Running
 
   1. From the command prompt, type:
   ```bash
@@ -85,7 +85,7 @@ To simplify running and managing Docker, there's some additional configuration t
 
   3. Because the service is running, we can now use the `docker` command later in this workshop.
 
-#### Enable Docker Engine at Startup
+### Enable Docker Engine at Startup
 Let's make sure the Docker engine is configured to run on system startup (and reboot).
 
   1. From the command prompt, type:
@@ -99,7 +99,7 @@ Let's make sure the Docker engine is configured to run on system startup (and re
 Executing /lib/systemd/systemd-sysv-install enable docker
   ```
 
-#### Elevate Your Privileges
+### Elevate Your Privileges
 Be default, running the `docker` command requires root privileges - that is, you have to prefix the command with `sudo`. It can also be run by a user in the **docker** group, which is automatically created during the install of Docker.  If you attempt to run the `docker` command without prefixing it with `sudo` or without being in the docker group, you'll get an output like the following:
 
 ```bash
