@@ -16,9 +16,9 @@ script:
   - cp -R ~/.config/layouts/themes ./themes/
   - cp -R ~/.config/layouts/daux ./daux/
   - cp -R ~/.config/layouts/node/* .
-  - travis wait npm install
+  - npm install
   - ~/.config/composer/vendor/bin/daux
-  - node index.js
+  - travis wait node index.js
   - git add static && git commit -m "documentation check-in ${TRAVIS_COMMIT}"
   - git ls-remote --heads origin gh-pages | grep gh-pages >/dev/null; if [ "$?" == "0" ]; then git push origin :gh-pages &> /dev/null; fi
   - git subtree push --prefix static origin gh-pages
